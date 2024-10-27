@@ -302,8 +302,8 @@ img {
 .skills__css {
   width: 85%;
 }
-.skills__js {
-  width: 65%;
+.skills__percentage {
+  width: 90%;
 }
 .skills__excel {
   width: 95%;
