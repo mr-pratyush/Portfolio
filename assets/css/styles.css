@@ -569,10 +569,10 @@ img {
   padding-bottom: 100px; /* Add some extra padding if needed */
 }
 .small-text {
-  font-size: 16px;    /* Slightly smaller than original size */
+  font-size: 22px;    /* Slightly smaller than original size */
   font-weight: bold;  /* Ensures text is bold */
-  line-height: 1.2;   /* Adjust line height for better readability */
-  letter-spacing: 0.5px; /* Adds slight spacing between letters */
+ /* line-height: 1.2;    Adjust line height for better readability */
+  /*letter-spacing: 0.5px;  Adds slight spacing between letters */
   color: #333;        /* Keeps the text color the same */
 }
 
