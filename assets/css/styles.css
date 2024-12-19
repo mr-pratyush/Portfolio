@@ -568,3 +568,10 @@ img {
   min-height: 100vh; /* Adjust as needed to make sure it's scrollable */
   padding-bottom: 100px; /* Add some extra padding if needed */
 }
+.small-text {
+  font-size: 0.875rem; /* Adjust this size as needed */
+  font-weight: 600; /* Keeps it bold but smaller */
+  text-align: center; /* Optional for alignment */
+  color: var(--second-color); /* Use your existing color variable */
+  line-height: 1.2; /* Adjust for spacing between lines */
+}
