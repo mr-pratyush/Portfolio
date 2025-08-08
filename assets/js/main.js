@@ -350,7 +350,7 @@ function sendAkiraMessage() {
 
   const selectedIntent = document.getElementById("akira-intent").value;
 
-  fetch("http://localhost:8000/chat", {
+  fetch("https://akira-chat.onrender.com/chat", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
@@ -461,26 +461,6 @@ function handleFollowUp(q) {
   sendAkiraMessage();
 }
 
-// Submit thumbs up/down feedback
-// function submitFeedback(isLiked) {
-//   fetch("http://localhost:8000/feedback", {
-//     method: "POST",
-//     headers: { "Content-Type": "application/json" },
-//     body: JSON.stringify({
-//       question: "previous",
-//       response: "previous",
-//       is_liked: isLiked,
-//       session_id: "default_user",
-//       source: "web",
-//     }),
-//   }).then(() => {
-//     const last = document.querySelector(
-//       "#akira-messages .ak-msg.bot:last-child .ak-feedback"
-//     );
-//     if (last) last.innerHTML += "<div>✅ Feedback submitted!</div>";
-//   });
-// }
-
 function submitFeedback(isLiked, event) {
   event.stopPropagation(); // 🛑 Stop the click from closing chatbox
 
@@ -499,7 +479,7 @@ function submitFeedback(isLiked, event) {
 
   lastFeedbackDiv.innerHTML += `<div class="ak-feedback-status">⏳ Submitting feedback...</div>`;
 
-  fetch("http://localhost:8000/feedback", {
+  fetch("https://akira-chat.onrender.com/feedback", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({

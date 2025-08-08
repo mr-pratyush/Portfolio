@@ -812,16 +812,16 @@ img {
 /* -- Container for input & disclaimer -- */
 #akira-input-section {
   border-top: 1px solid #ddd;
-  padding: 8px 10px;
+  padding: 6px 8px;
   background-color: #f9f9f9;
 }
 
 /* -- Small gray disclaimer message -- */
 #akira-disclaimer {
-  font-size: 10px;
+  font-size: 9px;
   text-align: center;
   color: #888;
-  max-width: 90%;
+  max-width: 95%;
   margin: auto;
   line-height: 1;
 }
@@ -1249,11 +1249,12 @@ img {
 .ak-show-quick {
   opacity: 1;
 }
-@media (max-width: 480px) {
+  @media (max-width: 480px) {
   #akira-chatbox {
-    width: 95vw;
-    height: 85vh;
-    border-radius: 12px;
+    width: 92vw; /* Slightly less than 95vw for better margins */
+    height: 80vh; /* Reduced from 85vh to leave more room for system UI */
+    max-height: 600px; /* Prevent excessive height on small devices */
+    border-radius: 10px; /* Slightly smaller radius for a cleaner look */
   }
 
   #akira-header {
@@ -1267,7 +1268,7 @@ img {
 
   #akira-input input {
     font-size: 12px;
-    padding: 10px 12px;
+    padding: 8px 12px;
   }
 
   #akira-send-btn {
