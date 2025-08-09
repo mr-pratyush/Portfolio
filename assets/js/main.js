@@ -23,22 +23,6 @@ function linkAction() {
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
-/*==================== Refresh the page when click on "Pratyush Gautam" ====================*/
-
-/*
-document.addEventListener('DOMContentLoaded', function() {
-    var logoLink = document.getElementById('logo-link');
-
-    logoLink.addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent the default link action
-        window.scrollTo(0, 0); // Scroll to the top
-        setTimeout(function() {
-            location.reload(); // Reload the page after scrolling
-        }, 0); // Set a timeout of 0 milliseconds to ensure scroll happens before refresh
-    });
-});
-*/
-
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 
 const sections = document.querySelectorAll("section[id]");
@@ -143,9 +127,9 @@ function startNewChat() {
           <!-- Vertical Quick Start Questions -->
           <div class="ak-quick-list-vertical" id="akira-quick-start">
             <div class="ak-quick-box" onclick="handleFollowUp('👨‍💼 Tell me about pratyush?')">👨‍💼 Tell me about pratyush? (Quick intro)</div>
-            <div class="ak-quick-box" onclick="handleFollowUp('🤖 what are your capabilities?')">🤖 what are your capabilities?</div>
             <div class="ak-quick-box" onclick="handleFollowUp('🌐 What are some latest News globally?')">🌐 What are some latest News globally??</div>
             <div class="ak-quick-box" onclick="handleFollowUp('👻 Tell me a funny joke')">👻 Tell me a funny joke.</div>
+            <div class="ak-quick-box" onclick="handleFollowUp('😊 Want to know about me?')">😊 Want to know about me?</div> 
           </div>
         `;
         document.getElementById("akira-intent").value = "all";
@@ -406,9 +390,6 @@ function sendAkiraMessage() {
       input.focus();
     });
 }
-
-
-
 
 // Generate references list
 function generateReferences(refs) {
